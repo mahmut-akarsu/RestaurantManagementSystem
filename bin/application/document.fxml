@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="400.0" prefWidth="300.0" styleClass="left-form" stylesheets="@loginDesing.css">
+               <children>
+                  <Label layoutX="98.0" layoutY="140.0" text="Sign In">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon fill="#1888a1" glyphName="USER" layoutX="110.0" layoutY="123.0" size="10em" wrappingWidth="45.14285659790039" />
+                  <TextField fx:id="username" layoutX="63.0" layoutY="211.0" onAction="#login" prefWidth="200.0" promptText="username">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="password" layoutX="63.0" layoutY="259.0" onAction="#login" prefWidth="200.0" promptText="password">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="loginBtn" layoutX="109.0" layoutY="309.0" mnemonicParsing="false" onAction="#login" prefHeight="39.0" prefWidth="94.0" styleClass="login-btn" stylesheets="@loginDesing.css" text="Login" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="right-form" stylesheets="@loginDesing.css">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" glyphName="BUILDING" layoutX="74.0" layoutY="204.0" size="15em" wrappingWidth="94.0" />
+                  <Label layoutX="26.0" layoutY="247.0" prefHeight="32.0" prefWidth="260.0" text="Restaurant Management System" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
